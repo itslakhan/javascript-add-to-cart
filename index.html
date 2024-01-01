@@ -1,0 +1,79 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Add your other head elements here -->
+</head>
+<body>
+
+<section>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" id="demo" onclick="changecolor()" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <h5>Total Item:</h5>
+    <h5 class="cartId">Total Item:</h5>
+
+    <!-- <div id="cartId" class="cartId"> -->
+      
+    </div>
+  </nav>
+</section>
+
+
+<dic id="shop" class="shop"></dic>
+
+
+<div class="container mt-4" id="cart">
+  <h2>Total price</h2>
+  <h2 class="totalAmount">totalAmount $</h2>
+
+  
+  <div class="table-responsive">
+      <table class="table table-bordered table-striped" id="cartTable">
+        <!-- <h2 class="cartId "> </h2> -->
+          <thead class="thead-dark">
+          <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Actions</th>
+              <th>total item</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Cart items dynamically generated here -->
+          
+      </tbody>
+      
+  </table>
+</div>
+    
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+    </body>
+</html>
